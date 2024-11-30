@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Public/bootstrap.css">
+    <link rel="stylesheet" href="../../Public/bootstrap.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="container mt-3">
         <h1>Ajout d'un Appartement</h1>
-        <form action="../Controller/Add.php" method="post" class="form-control">
+        <form action="../../Controller/Appartement/Add.php" method="post" class="form-control">
             Référence : <input type="number" name="reference" class="form-control"><br>
             Propriétaire : <input type="text" name="proprietaire" class="form-control"><br>
             Localité : <input type="text" name="localite" class="form-control"><br>

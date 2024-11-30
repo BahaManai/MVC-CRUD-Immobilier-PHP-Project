@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Public/bootstrap.css">
+    <link rel="stylesheet" href="../../Public/bootstrap.css">
     <title>Document</title>
 </head>
 
@@ -16,7 +16,7 @@
             echo "$etat effectuée avec succés";
         }
         ?>
-        <br><br><a href="../Controller/ListerAppartement.php" class="btn btn-success">Lister</a>
+        <br><br><a href="../../Controller/Villa/ListerVilla.php" class="btn btn-success">Lister</a>
     </div>
 </body>
 

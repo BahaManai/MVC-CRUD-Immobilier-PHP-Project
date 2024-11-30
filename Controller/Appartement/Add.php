@@ -1,7 +1,7 @@
 <?php
-require_once "../Model/CRUD_Appartement.php";
+require_once "../../Model/CRUD_Appartement.php";
 $crud = new CRUD_Appartement();
-include "../View/Add.php";
+include "../../View/Appartement/Add.php";
 
 if (isset($_POST['ok'])) {
     $ref = htmlspecialchars($_POST['reference']);
@@ -14,7 +14,7 @@ if (isset($_POST['ok'])) {
     $appartement = new Appartement($ref, $prop, $local, $surf, $nb, $du, $sec);
     $res = $crud->AjouterApp($appartement);
     if ($res) {
-        header('location:../View/Succés.php?etat=Insertion');
+        header('location:../../View/Appartement/Succés.php?etat=Insertion');
         exit;
     } else {
         echo "Problème d'ajout";

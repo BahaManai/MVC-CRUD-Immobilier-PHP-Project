@@ -1,10 +1,10 @@
 <?php
-require_once "../Model/CRUD_Appartement.php";
+require_once "../../Model/CRUD_Appartement.php";
 $crud = new CRUD_Appartement();
 
 $ref = htmlspecialchars($_GET['ref']);
 $AppInit = $crud->RecupererApp($ref);
-include "../View/ModifierAppartement.php";
+include "../../View/Appartement/ModifierAppartement.php";
 
 if (isset($_POST['OK'])) {
     $reference = htmlspecialchars($_POST['reference']);
@@ -18,7 +18,7 @@ if (isset($_POST['OK'])) {
     $res = $crud->ModifierApp($ref, $appartement);
 
     if ($res) {
-        header('location:../View/Succés.php?etat=Modification');
+        header('location:../../View/Appartement/Succés.php?etat=Modification');
         exit;
     } else {
         echo "Problème de modification";

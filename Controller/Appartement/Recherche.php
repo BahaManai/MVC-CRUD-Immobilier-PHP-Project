@@ -1,7 +1,7 @@
 <?php
-require_once "../Model/CRUD_Appartement.php";
+require_once "../../Model/CRUD_Appartement.php";
 $crud = new CRUD_Appartement();
-include "../View/Recherche.php";
+include "../../View/Appartement/Recherche.php";
 if (isset($_POST['ok'])) {
     $ref = $_POST['rech'];
     $appartement = $crud->RecupererApp($ref);
